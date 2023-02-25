@@ -154,6 +154,8 @@ interface Validation {
   isValid: boolean;
 }
 // 모든 data를 가지고 있어야 한다.
+// 변수명 뒤에 ?를 추가해 선택적 속성으로 작성할 수 있다.
+// readonly 속성을 추가해 읽기전용으로 만들 수 있다.
 const stu: User & Validation = {
   name: "lee",
   age: 33,
